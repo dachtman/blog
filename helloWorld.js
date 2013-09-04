@@ -1,8 +1,8 @@
 var http = require('http'),
-    fs = require('fs');
+    fs = require('fs'),
+    express = require('express');
 
-
-fs.readFile('../index.html', function (err, html) {
+fs.readFile('./index.html', function (err, html) {
     if (err) {
         throw err; 
     }       
